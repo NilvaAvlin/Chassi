@@ -1,7 +1,7 @@
 package testeChassi;
 
 
-import org.junit.Before;
+//import org.junit.Before;
 import org.junit.Test;
 
 import ChassiUtil.ChassiUtil;
@@ -11,10 +11,10 @@ public class TesteChassiUtil extends TestCase {
 	
 private ChassiUtil util = new ChassiUtil();
 	
-	//@Before
-	//public void inicializar(){
-	//	util = new ChassiUtil();
-	//}
+	/*@Before
+	public void inicializar(){
+	util = new ChassiUtil();
+	}*/
 
 	@Test
 	public void testarAnoAChassi() {
@@ -48,7 +48,7 @@ private ChassiUtil util = new ChassiUtil();
 	
 	@Test(expected=IllegalArgumentException.class)
 	public void testarChassiInvalido(){
-		assertEquals(util.obterAno("teste", 10), 0);
+		assertEquals(util.obterAno("9BP17164GE0000001", 10), 2014);
 	}
 	
 	@Test(expected=IllegalArgumentException.class)

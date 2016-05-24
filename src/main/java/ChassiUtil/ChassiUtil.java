@@ -5,10 +5,10 @@ public class ChassiUtil {
 	public int obterAno(String chassi, int posicao){
 		
 		if(chassi == null || chassi.trim().length()!= 17){
-			throw new IllegalArgumentException("Chassi informado inv�lido!");
+			throw new IllegalArgumentException("Chassi informado inválido!");
 		}
 		if(posicao < 0 || posicao > 17){
-			throw new IllegalArgumentException("Posi��o informado incorreta!");
+			throw new IllegalArgumentException("Posiçãoo informado incorreta!");
 
 		}
 		char caractere = chassi.toUpperCase().charAt(posicao -1);
